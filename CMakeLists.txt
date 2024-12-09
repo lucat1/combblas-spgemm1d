@@ -9,7 +9,7 @@ set(CMAKE_BUILD_TYPE "Release")
 
 # Main CombBLAS library
 add_library(CombBLAS src/CommGrid.cpp src/mmio.c src/MPIType.cpp src/MPIOp.cpp src/MemoryPool.cpp src/hash.cpp)
-target_compile_definitions(CombBLAS PUBLIC -DSpGEMM1DTIMING)
+#target_compile_definitions(CombBLAS PUBLIC -DSpGEMM1DTIMING)
 
 # require c++14 in CombBLAS interface
 if("cxx_std_14" IN_LIST CMAKE_CXX_COMPILE_FEATURES) # Use language feature if available (CMake >= 3.8)
